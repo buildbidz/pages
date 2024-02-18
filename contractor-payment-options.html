@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Services Purchase | BuildBidz</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .services-container {
+            max-width: 80%;
+            margin: 50px auto;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .option-pane {
+            border: 2px solid #555;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            flex-basis: 30%; /* Adjust the width for desktop */
+            box-sizing: border-box; /* Include padding and border in the total width */
+        }
+
+        .option-description {
+            color: #ccc;
+            font-size: 16px;
+            margin-bottom: 15px;
+            text-align: center; /* Align text to the left */
+        }
+		
+		.option-points {
+			color: #ccc;
+			text-align: left;
+			margin-bottom: 20px; /* Increase the margin for more spacing */
+		}
+
+        .payment-button {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #29B6F6;
+            color: #fff;
+        }
+
+        .payment-button:hover {
+            background-color: #039BE5;
+        }
+
+        @media screen and (max-width: 600px) {
+            .option-pane {
+                flex-basis: 80%; /* Adjust the width for mobile */
+            }
+
+            .option-pane:nth-child(2) {
+                order: 1; /* Move pane 2 to the top for mobile */
+            }
+
+            .option-pane:nth-child(3) {
+                order: 3; /* Move pane 3 to the bottom for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="services-container">
+        <div class="option-pane">
+            <h2 class="option-description">Basic Plan</h2>
+                <ul class="option-points">
+                    <li>Get 1000 total credits</li>
+                </ul>
+            <a href="#" class="payment-button">Pay 1000 INR</a>
+        </div>
+
+        <div class="option-pane">
+            <h2 class="option-description">Standard Plan</h2>
+                <ul class="option-points">
+                    <li>Get 6000 total credits</li>
+                </ul>
+            <a href="#" class="payment-button">Pay 5000 INR</a>
+        </div>
+
+        <div class="option-pane">
+            <h2 class="option-description">Premium Plan</h2>
+                <ul class="option-points">
+                    <li>Get 12500 total credits</li>
+                </ul>
+            <a href="#" class="payment-button">Pay 10000 INR</a>
+        </div>
+    </div>
+</body>
+</html>

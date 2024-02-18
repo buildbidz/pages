@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Thank You for Your Purchase | BuildBidz</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .thank-you-container {
+            max-width: 80%;
+            margin: 50px auto;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .thank-you-heading {
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .thank-you-message {
+            color: #ccc;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .back-to-home-link,
+        .print-button {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .back-to-home-link {
+            background-color: #341AD3;
+            color: #fff;
+        }
+
+        .back-to-home-link:hover {
+            background-color: #2C149E;
+        }
+
+        .print-button {
+            background-color: #29B6F6; /* Updated color for the Print button */
+            color: #fff;
+        }
+
+        .print-button:hover {
+            background-color: #039BE5; /* Darker shade on hover for the Print button */
+        }
+
+        @media screen and (max-width: 600px) {
+            .thank-you-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <h1 class="thank-you-heading">Thank You for Your Purchase!</h1>
+        <p class="thank-you-message">We appreciate your business. Your order has been successfully processed.</p>
+        <p class="thank-you-message">Order Number: <strong>[Order Number]</strong></p>
+        <p class="thank-you-message">You will receive an email confirmation shortly.</p>
+        <div class="button-container">
+            <a href="[Link to Home Page]" class="back-to-home-link">Back to Home</a>
+            <button class="print-button" onclick="window.print()">Print</button>
+        </div>
+    </div>
+</body>
+</html>
